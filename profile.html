@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>профіль - QuickCut URL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-indigo-50 to-blue-100 flex flex-col min-h-screen text-slate-900">
+    <header class="bg-indigo-600 text-white p-4 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold flex items-center gap-2 hover:opacity-90 transition-opacity">
+                <span class="logo-emoji">✂️</span> QuickCut
+            </a>
+            <ul class="hidden md:flex gap-6 font-medium">
+                <li><a href="index.html" class="hover:text-indigo-200 transition">головна</a></li>
+                <li><a href="about.html" class="hover:text-indigo-200 transition">про додаток</a></li>
+                <li><a href="login.html" class="bg-white text-indigo-600 px-4 py-1 rounded-full hover:bg-indigo-50 transition shadow-sm font-bold">вихід</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center p-6">
+        <div class="w-full max-w-xl bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden relative">
+            <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600"></div>
+            <div class="bg-indigo-50 p-8 flex items-center gap-6 border-b border-gray-100">
+                <div class="w-24 h-24 bg-white rounded-2xl shadow-inner flex items-center justify-center text-5xl border border-gray-200">👤</div>
+                <div>
+                    <h2 class="text-3xl font-extrabold text-gray-900">Телюк Андрій</h2>
+                    <p class="text-indigo-600 font-semibold uppercase text-xs tracking-widest mt-1">Студент групи КВ-32</p>
+                </div>
+            </div>
+            <div class="p-8">
+                <table class="w-full text-left border-collapse">
+                    <tbody class="text-gray-700 text-sm">
+                        <tr class="border-b border-gray-50">
+                            <th class="py-4 font-bold text-gray-500 uppercase text-xs w-1/3">email: </th>
+                            <td class="py-4 font-medium text-indigo-600">teliuk.andrii@student.edu</td>
+                        </tr>
+                        <tr class="border-b border-gray-50">
+                            <th class="py-4 font-bold text-gray-500 uppercase text-xs">стать: </th>
+                            <td class="py-4 font-medium">Чоловіча</td>
+                        </tr>
+                        <tr>
+                            <th class="py-4 font-bold text-gray-500 uppercase text-xs">народився: </th>
+                            <td class="py-4 font-medium text-slate-600">15.05.2010</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bg-gray-50 p-6 flex justify-end gap-3 border-t border-gray-100">
+                <button class="px-5 py-2 rounded-xl text-sm font-bold bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-md">зберегти дані</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-white border-t border-gray-200 py-6 text-center text-gray-500 text-xs font-bold">
+        <p>&copy; 2026 Телюк Андрій, КВ-32</p>
+    </footer>
+</body>
+</html>

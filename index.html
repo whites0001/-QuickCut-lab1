@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickCut URL - панель управління</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-indigo-50 to-blue-100 flex flex-col min-h-screen">
+    <header class="bg-indigo-600 text-white p-4 shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto flex items-center">
+        <a href="index.html" class="text-2xl font-bold flex items-center gap-2 hover:opacity-90 transition-opacity">
+            <span class="logo-emoji">✂️</span> QuickCut
+        </a>
+
+        <ul class="hidden md:flex gap-6 font-medium ml-auto mr-8">
+            <li><a href="index.html" class="text-indigo-200 underline decoration-2 underline-offset-4">головна</a></li>
+            <li><a href="profile.html" class="hover:text-indigo-200 transition">профіль</a></li>
+            <li><a href="about.html" class="hover:text-indigo-200 transition">про додаток</a></li>
+        </ul>
+
+        <a href="login.html" class="bg-white text-indigo-600 px-4 py-1 rounded-full hover:bg-indigo-50 transition shadow-sm font-bold">Вихід</a>
+    </nav>
+</header>
+
+    <main class="flex-grow container mx-auto px-6 py-10">
+        <div class="max-w-4xl mx-auto bg-white p-8 rounded-3xl shadow-2xl border border-gray-100 relative overflow-hidden text-slate-900">
+            <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600"></div>
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-2xl font-black uppercase tracking-tight">панель управління</h1>
+                <span class="text-xs font-bold text-gray-400 bg-gray-50 px-3 py-1 rounded-full border">Телюк А. | КВ-32</span>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-4 mb-10">
+                <input type="url" placeholder="вставте URL..." class="flex-grow px-4 py-4 rounded-2xl border border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 outline-none transition-all shadow-sm">
+                <button class="bg-indigo-600 text-white px-10 py-4 rounded-2xl font-bold hover:bg-indigo-700 transform hover:-translate-y-1 transition-all shadow-lg">скоротити</button>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead class="text-gray-400 text-xs uppercase font-bold border-b border-gray-50">
+                        <tr>
+                            <th class="pb-4 px-2">Оригінал</th>
+                            <th class="pb-4 px-2">Скорочено</th>
+                            <th class="pb-4 text-center">Дії</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-b last:border-0 hover:bg-indigo-50/30 transition">
+                            <td class="py-5 px-2 truncate-url text-indigo-600 font-medium">https://github.com/TeliukAndrii/QuickCut-Project</td>
+                            <td class="py-5 px-2 font-mono font-bold text-gray-700">cutt.ly/AtpHHPt</td>
+                            <td class="py-5 text-center flex justify-center gap-2">
+                                <button class="p-2 bg-amber-50 text-amber-600 rounded-xl hover:bg-amber-100 transition text-xs font-bold">РЕД.</button>
+                                <button class="p-2 bg-red-50 text-red-600 rounded-xl hover:bg-red-100 transition text-xs font-bold">ВИД.</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Телюк Андрій, група КВ-32. Лабораторна робота 1</p>
+    </footer>
+</body>
+</html>

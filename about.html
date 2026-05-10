@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>про додаток - QuickCut URL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-indigo-50 to-blue-100 flex flex-col min-h-screen text-slate-900">
+    <header class="bg-indigo-600 text-white p-4 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold flex items-center gap-2 hover:opacity-90 transition-opacity">
+                <span class="logo-emoji">✂️</span> QuickCut
+            </a>
+            <ul class="flex gap-6 font-medium">
+                <li><a href="index.html" class="hover:text-indigo-200 transition">головна</a></li>
+                <li><a href="login.html" class="bg-white text-indigo-600 px-4 py-1 rounded-full font-bold shadow-sm transition">вхід</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center p-6 text-center">
+        <div class="max-w-2xl bg-white p-12 rounded-3xl shadow-2xl border border-gray-100 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600"></div>
+            <div class="text-7xl mb-6 logo-emoji">🔗</div>
+            <h1 class="text-4xl font-black text-indigo-600 mb-6 uppercase tracking-tight">QuickCut URL</h1>
+            <p class="text-lg text-gray-600 leading-relaxed italic">"інструмент для скорочення довгих URL" </p>
+            <div class="mt-8 pt-8 border-t border-gray-100 flex justify-between items-center text-xs font-bold text-gray-400">
+                <span class="uppercase">розробник: Телюк Андрій</span>
+                <span class="uppercase">група: КВ-32</span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-6 text-center text-gray-500 text-xs font-bold">
+        <p>&copy; 2026 Телюк Андрій, КВ-32</p>
+    </footer>
+</body>
+</html>

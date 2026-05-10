@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>вхід</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-indigo-50 to-blue-100 flex flex-col min-h-screen text-slate-900">
+    <header class="bg-indigo-600 text-white p-4 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold flex items-center gap-2 hover:opacity-90 transition-opacity">
+                <span class="logo-emoji">✂️</span> QuickCut
+            </a>
+            <a href="register.html" class="bg-white text-indigo-600 px-4 py-1 rounded-full font-bold shadow-sm">реєстрація</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center p-6">
+        <div class="w-full max-w-md bg-white p-10 rounded-3xl shadow-2xl border border-gray-100 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-2 bg-indigo-600"></div>
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-extrabold text-gray-900">Вітаємо!</h2>
+                <p class="text-gray-400 mt-2 text-sm font-medium italic">студентська авторизація (КВ-32)</p>
+            </div>
+            <form action="index.html" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">пошта </label>
+                    <input type="email" required placeholder="teliuk@student.kpi.ua" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 outline-none transition-all shadow-sm text-slate-900">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">пароль </label>
+                    <input type="password" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 outline-none text-slate-900">
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-indigo-700 transform hover:-translate-y-1 transition-all shadow-lg">увійти в систему</button>
+            </form>
+            <p class="text-center mt-8 text-gray-600 text-sm">немає акаунту? <a href="register.html" class="text-indigo-600 font-bold hover:underline">Створити зараз</a></p>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-6 text-center text-gray-500 text-xs font-bold uppercase tracking-widest">
+        <p>&copy; 2026 Телюк Андрій, КВ-32</p>
+    </footer>
+</body>
+</html>
